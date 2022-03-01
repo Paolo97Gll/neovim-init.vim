@@ -78,11 +78,15 @@ set tabstop=4 softtabstop=4 shiftwidth=4 expandtab smarttab autoindent
 set incsearch ignorecase smartcase hlsearch
 set ruler laststatus=2 showcmd showmode
 set list listchars=trail:»,tab:»-
-set fillchars+=vert:\ 
+set fillchars+=vert:\
 set wrap breakindent
 set encoding=utf-8
-set number
+" set number
 set title
+set mouse=a
+" F2 to toggle paste mode
+map <F2> :set invpaste<CR>
+set pastetoggle=<F2>
 
 """ Plugin Configurations
 
@@ -213,7 +217,7 @@ nmap <leader>q :NERDTreeToggle<CR>
 nmap \ <leader>q
 nmap <leader>w :TagbarToggle<CR>
 nmap <leader>ee :Colors<CR>
-nmap <leader>ea :AirlineTheme 
+nmap <leader>ea :AirlineTheme
 nmap <leader>e1 :call ColorDracula()<CR>
 nmap <leader>e2 :call ColorSeoul256()<CR>
 nmap <leader>e3 :call ColorForgotten()<CR>
@@ -237,4 +241,3 @@ autocmd FileType python nmap <leader>x :0,$!~/.config/nvim/env/bin/python -m yap
 nmap <silent> <leader><leader> :noh<CR>
 nmap <Tab> :bnext<CR>
 nmap <S-Tab> :bprevious<CR>
-
