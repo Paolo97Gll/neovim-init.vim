@@ -25,12 +25,12 @@ echo '[*] Downloading vim-plug, the best minimalistic vim plugin manager ...'
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # (Optional but recommended) Install a nerd font for icons and a beautiful airline bar (https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts) (I'll be using Iosevka for Powerline)
-echo "[*] Downloading patch font into ~/.local/share/fonts ..."
-curl -fLo ~/.fonts/Iosevka\ Term\ Nerd\ Font\ Complete.ttf --create-dirs https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Iosevka/Regular/complete/Iosevka%20Term%20Nerd%20Font%20Complete.ttf
+#echo "[*] Downloading patch font into ~/.local/share/fonts ..."
+#curl -fLo ~/.fonts/Iosevka\ Term\ Nerd\ Font\ Complete.ttf --create-dirs https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Iosevka/Regular/complete/Iosevka%20Term%20Nerd%20Font%20Complete.ttf
 
 # (Optional) Alias vim -> nvim
-echo '[*] Aliasing vim -> nvim, remember to source ~/.bashrc ...'
-echo "alias vim='nvim'" >> ~/.bashrc
+#echo '[*] Aliasing vim -> nvim, remember to source ~/.bashrc ...'
+#echo "alias vim='nvim'" >> ~/.bashrc
 
 # Enter Neovim and install plugins using a temporary init.vim, which avoids warnings about missing colorschemes, functions, etc
 echo -e '[*] Running :PlugInstall within nvim ...'
